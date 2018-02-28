@@ -1,7 +1,7 @@
 class SubsController < ApplicationController
   before_action :set_sub, only: [:show, :edit, :update, :destroy]
   def index
-    @subs = Subs.all
+    @subs = Sub.all
   end
 
   def show
@@ -45,7 +45,5 @@ class SubsController < ApplicationController
     def set_sub
       @sub = Sub.find(params(:id))
     end
-
-  end
 
 end
